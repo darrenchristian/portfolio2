@@ -1,0 +1,248 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'K2D', sans-serif;
+}
+body{
+	background-color: grey;
+	background-image: url("http://montreal.webdesign2k9.com/wp-content/uploads/2017/03/web-design-background-montreal-1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+aside{
+	position: fixed;
+	width: 25%;
+	left: 0;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.aside-toggle{
+	left: -500px;
+	transition: 0.5s;
+}
+.asidebtn{
+	position: fixed;
+	left: 20%;
+	transition: 0.6s;
+	z-index: 9999;
+}
+.mainContent{
+	transition: 0.5s;
+}
+section{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.asidebtn-tog{
+	left: 0;
+	transition: 0.5s;
+	background: white;
+	z-index: 999999;
+}
+#blinktext{
+	display: inline-block;
+	font-size: 30px;
+	vertical-align: middle;
+	color: black;
+	text-align: center;
+	align-self: center;
+}
+.list-group-item{
+	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+button:focus{
+	border: transparent;
+}
+.header{
+	height: 20%;
+	background-image: url('https://dw5a5faavi3b0.cloudfront.net/media/images/Coding.2e16d0ba.fill-1280x350-c100.jpg');
+	background-size: cover;
+
+}
+#arrow{
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+#arrow:hover{
+	transition: 0.5s;
+	opacity: 0.5;
+}
+main.container-fluid{
+	height: 100vh;
+}
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: orange;
+	animation: blink .75s step-end infinite;
+}
+@keyframes blink {
+	from, to { 
+		background-color: transparent; 
+	}
+	50% { 
+		background-color: green; 
+	}
+}
+.start-content{
+	height: 80%;
+}
+.mypic{
+	height: 170px;
+	width: 170px;
+	border: 1px transparent;
+	border-radius: 100px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	margin-top: -11%;
+	z-index: 999;
+	transition: 0.5s;
+}
+.mypictog{
+	margin-top: -8.5%;
+	transition: 0.5s;	
+}
+.aboutme.mt-5{
+	margin-top: 5rem!important;
+}
+.myskills{
+	height: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+span.col-sm-3{
+	margin-top: -5px;
+}
+.skills-border{
+	border-right: 1px solid;
+}
+.progress-bar{
+	text-align: right;
+}
+.toggleAnimateBar{
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .4s;
+}
+@keyframes animateBar {
+    0% {
+    	transform: translateX(-100%);
+    }
+    100% {
+    	transform: translateX(0);
+    }
+}
+.progress-bar{
+		display: block;
+    float: right;
+}
+html{
+	scroll-behavior: smooth;
+}
+.list-group a{
+	color: white;	
+	text-decoration: none;
+}
+#myworks{
+	height: 100vh;
+}
+button:focus {
+	outline: 0;
+}
+.card-img-top{
+	height: 250px;
+	transition: 0.5s;
+}
+.cardimgtoptoggle{
+	height: 350px;
+	transition: 0.5s;
+}
+/*.blinktexttog{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: 0.5s;
+}*/
+.list-group-item.active{
+	background-color: green;
+	border: transparent;
+}
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+    background-color: white;
+}
+.lgi-even{
+	transform: translateX(0);
+	transition: 1s;
+}
+.lgi-odd{
+	transform: translateX(0);
+	transition: 1s;
+}
+.lgi-eventoggle{
+	transform: translateX(-100%);
+}
+.lgi-oddtoggle{
+	transform: translateX(100%);
+}
+.title{
+	background-color: black;
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+}
+#contacts{
+	height: 100%;
+}
+.contactsText{
+	justify-content: center;
+}
+#contacts a {
+	color: black;
+}
+#contacts i{
+	font-size: 40px;
+}
+#contacts a:first-child:hover{
+	text-decoration: none;
+	color: #FBBC05;
+}
+#contacts a:nth-child(2):hover{
+	text-decoration: none;
+	color: #3b5998;
+}
+#contacts a:nth-child(3):hover{
+	text-decoration: none;
+	color: #D44638;
+}
+#contacts a:nth-child(4):hover{
+	text-decoration: none;
+	color: white;
+}
+
+#contacts a:nth-child(5):hover{
+	text-decoration: none;
+	color: #554488;
+}
